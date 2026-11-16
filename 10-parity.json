@@ -1,0 +1,9 @@
+{
+ "clips": 80,
+ "maxProbDiff": 3.762310644139788e-7,
+ "argmaxDisagreements": 0,
+ "abstainDisagreementsAt055": 0,
+ "jsTestAccuracy": 0.9375,
+ "window": "first 4 s of clip",
+ "features": "log-mel floored at max(acc,1e-6), per-clip standardization"
+}

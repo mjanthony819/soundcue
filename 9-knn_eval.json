@@ -1,0 +1,205 @@
+{
+ "enroll_files": [
+  "2-118625-A-30.wav",
+  "1-52290-A-30.wav",
+  "2-120218-B-30.wav"
+ ],
+ "enroll_pairwise_dists": [
+  0.0809,
+  0.2095,
+  0.0819
+ ],
+ "gate_auto": 0.3143,
+ "gate_tight": 0.1572,
+ "auto": {
+  "false_matches": 36,
+  "false_match_detail": [
+   {
+    "file": "5-150409-A-42.wav",
+    "true": "siren",
+    "d": 0.2986
+   },
+   {
+    "file": "5-156999-A-19.wav",
+    "true": "thunderstorm",
+    "d": 0.1941
+   },
+   {
+    "file": "5-156999-B-19.wav",
+    "true": "thunderstorm",
+    "d": 0.2413
+   },
+   {
+    "file": "5-156999-C-19.wav",
+    "true": "thunderstorm",
+    "d": 0.2597
+   },
+   {
+    "file": "5-156999-D-19.wav",
+    "true": "thunderstorm",
+    "d": 0.2516
+   },
+   {
+    "file": "5-156999-E-19.wav",
+    "true": "thunderstorm",
+    "d": 0.2917
+   },
+   {
+    "file": "5-179860-A-43.wav",
+    "true": "car_horn",
+    "d": 0.0757
+   },
+   {
+    "file": "5-179863-A-43.wav",
+    "true": "car_horn",
+    "d": 0.1189
+   },
+   {
+    "file": "5-179865-A-43.wav",
+    "true": "car_horn",
+    "d": 0.1285
+   },
+   {
+    "file": "5-179866-A-43.wav",
+    "true": "car_horn",
+    "d": 0.0863
+   },
+   {
+    "file": "5-179868-A-43.wav",
+    "true": "car_horn",
+    "d": 0.2749
+   },
+   {
+    "file": "5-188495-A-19.wav",
+    "true": "thunderstorm",
+    "d": 0.2213
+   },
+   {
+    "file": "5-192191-A-19.wav",
+    "true": "thunderstorm",
+    "d": 0.2305
+   },
+   {
+    "file": "5-195557-A-19.wav",
+    "true": "thunderstorm",
+    "d": 0.2486
+   },
+   {
+    "file": "5-198411-F-20.wav",
+    "true": "crying_baby",
+    "d": 0.2943
+   },
+   {
+    "file": "5-203128-A-0.wav",
+    "true": "dog",
+    "d": 0.2252
+   },
+   {
+    "file": "5-207781-A-17.wav",
+    "true": "pouring_water",
+    "d": 0.2135
+   },
+   {
+    "file": "5-208030-A-0.wav",
+    "true": "dog",
+    "d": 0.2262
+   },
+   {
+    "file": "5-213855-A-0.wav",
+    "true": "dog",
+    "d": 0.293
+   },
+   {
+    "file": "5-215634-A-17.wav",
+    "true": "pouring_water",
+    "d": 0.2755
+   }
+  ],
+  "true_knocks": 16,
+  "missed_knocks": 0,
+  "miss_detail": []
+ },
+ "tight": {
+  "false_matches": 15,
+  "false_match_detail": [
+   {
+    "file": "5-179860-A-43.wav",
+    "true": "car_horn",
+    "d": 0.0757
+   },
+   {
+    "file": "5-179863-A-43.wav",
+    "true": "car_horn",
+    "d": 0.1189
+   },
+   {
+    "file": "5-179865-A-43.wav",
+    "true": "car_horn",
+    "d": 0.1285
+   },
+   {
+    "file": "5-179866-A-43.wav",
+    "true": "car_horn",
+    "d": 0.0863
+   },
+   {
+    "file": "5-221528-A-39.wav",
+    "true": "glass_breaking",
+    "d": 0.0606
+   },
+   {
+    "file": "5-221529-A-39.wav",
+    "true": "glass_breaking",
+    "d": 0.0732
+   },
+   {
+    "file": "5-231762-A-0.wav",
+    "true": "dog",
+    "d": 0.0687
+   },
+   {
+    "file": "5-233605-A-39.wav",
+    "true": "glass_breaking",
+    "d": 0.0598
+   },
+   {
+    "file": "5-233607-A-39.wav",
+    "true": "glass_breaking",
+    "d": 0.0663
+   },
+   {
+    "file": "5-234263-A-25.wav",
+    "true": "footsteps",
+    "d": 0.0779
+   },
+   {
+    "file": "5-257642-A-39.wav",
+    "true": "glass_breaking",
+    "d": 0.1507
+   },
+   {
+    "file": "5-260432-A-39.wav",
+    "true": "glass_breaking",
+    "d": 0.0991
+   },
+   {
+    "file": "5-260433-A-39.wav",
+    "true": "glass_breaking",
+    "d": 0.093
+   },
+   {
+    "file": "5-260434-A-39.wav",
+    "true": "glass_breaking",
+    "d": 0.0746
+   },
+   {
+    "file": "5-9032-A-0.wav",
+    "true": "dog",
+    "d": 0.1402
+   }
+  ],
+  "true_knocks": 16,
+  "missed_knocks": 0,
+  "miss_detail": []
+ }
+}
