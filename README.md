@@ -19,18 +19,21 @@ Built for **IdeaLab Hacks** (Devpost), solo. Built with AI assistance (disclosed
 
 - **Listen** — live mic → top-3 class probabilities, abstain threshold, editable alert tiers, deduplicated
   event timeline (same sound within 10 s merges), CSV export, screen flash for high-tier alerts.
-- **Try a clip** — ten real held-out test clips (fold 5, never trained or tuned on), plus your own WAV
+- **Try a clip** — ten real clips from the official fold-5 test split (held out from training; development-exposed — see Evaluation), plus your own WAV
   upload, plus an interactive white-noise slider that shows confidence degrade until the model abstains.
 - **Evidence** — measured results, per-class precision/recall, confusion matrix, honest limits.
 
 ## Data & model
 
 - **Data:** [ESC-50](https://github.com/karoldvl/ESC-50) — 10 alert-relevant classes, 400 clips (40/class).
-  Official folds 1–3 train (240), fold 4 validation (80), fold 5 test (80, untouched). No clip overlaps folds.
+  Official folds 1–3 train (240), fold 4 validation (80), fold 5 test (80). Fold 5 was held out from training, but its clips were inspected during development
+  (interactive noise tests, pipeline fixes, re-evaluation) — read it as a development-exposed benchmark,
+  not pristine independent validation. No threshold or feature was retuned on fold 5 to raise the score.
+  No clip overlaps folds.
 - **Model:** 79,866-parameter CNN (4 conv+BN+ReLU+maxpool blocks, GAP, linear), trained for this project in
   PyTorch (CPU), seed 7, best checkpoint by validation accuracy. Train-time augmentation: speed 0.9–1.1×,
   gain, 10–30 dB white noise, time shift, random 4 s crop, mixup, SpecAugment-style masking.
-- **Results, re-measured from the shipped weights** on the untouched fold-5 test split with the final
+- **Results, re-measured from the shipped weights** on the fold-5 test split with the final
   feature pipeline: CNN — validation 92.5% (80 clips), **test 93.75% (80 clips)**.
   Baseline (mel mean/std + softmax regression, same features) — validation 67.5%, test 56.2%.
   Test confusions (5 errors): siren→car horn ×2, dog→glass breaking, footsteps→door knock,

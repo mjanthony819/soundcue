@@ -248,7 +248,9 @@ $('btnClassifyClip').onclick = async () => {
     renderBars($('clipBars'), probs, CLASSES.map(c=>NICE[c]));
     $('clipTruth').textContent = (selectedClip.class ? 'Actual class: ' + NICE[selectedClip.class] : 'Your own upload (unknown class)') +
       (+$('noise').value ? ` · with added noise (SNR ~${31- +$('noise').value} dB)` : ' · clean') +
-      (selectedClip.class ? (CLASSES[top] === selectedClip.class ? ' · correct' : ' · mismatch — the failure modes described in Limits') : '');
+      (selectedClip.class ? (probs[top] >= thr
+        ? (CLASSES[top] === selectedClip.class ? ' · detected correctly' : ' · misdetected — the failure modes described in Limits')
+        : (CLASSES[top] === selectedClip.class ? ' · top-ranked class matches, but below threshold — no detection' : ' · top-ranked class also mismatches — no detection')) : '');
     $('clipStatus').textContent = '';
   } catch(e) { $('clipStatus').textContent = 'Could not classify: ' + e.message; }
   $('btnClassifyClip').disabled = false;
