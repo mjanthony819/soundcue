@@ -1,0 +1,42 @@
+{
+ "car_horn": {
+  "file": "5-179860-A-43.wav",
+  "attribution": "clip derived from car horn 1 - 9.4.11.wav (http://www.freesound.org/people/toiletrolltube/sounds/179860/) by toiletrolltube [CC0]"
+ },
+ "clock_alarm": {
+  "file": "5-210612-A-37.wav",
+  "attribution": "clip derived from Alarm Clock (http://www.freesound.org/people/mefrancis13/sounds/210612/) by mefrancis13 [CC0]"
+ },
+ "crying_baby": {
+  "file": "5-151085-A-20.wav",
+  "attribution": "clip derived from 01 baby crying hard.wav (http://www.freesound.org/people/PickleJones/sounds/151085/) by PickleJones [CC0]"
+ },
+ "dog": {
+  "file": "5-203128-A-0.wav",
+  "attribution": "clip derived from Toupie1.mp3 (http://www.freesound.org/people/Pierre%20Grandjean/sounds/203128/) by Pierre Grandjean [CC0]"
+ },
+ "door_wood_knock": {
+  "file": "5-218980-A-30.wav",
+  "attribution": "clip derived from knocking GOOD A_2.aif (http://www.freesound.org/people/bcimmet/sounds/218980/) by bcimmet [CC-BY]"
+ },
+ "footsteps": {
+  "file": "5-234263-A-25.wav",
+  "attribution": "clip derived from Footsteps - Wood (http://www.freesound.org/people/Fewes/sounds/234263/) by Fewes [CC-BY]"
+ },
+ "glass_breaking": {
+  "file": "5-221528-A-39.wav",
+  "attribution": "clip derived from Glass Break (http://www.freesound.org/people/unfa/sounds/221528/) by unfa [CC-BY]"
+ },
+ "pouring_water": {
+  "file": "5-205589-A-17.wav",
+  "attribution": "clip derived from WATER_INTO_GLASS_CLOSE_01.wav (http://www.freesound.org/people/justingregoire/sounds/205589/) by justingregoire [CC0]"
+ },
+ "siren": {
+  "file": "5-117118-A-42.wav",
+  "attribution": "clip derived from siren_low.wav (http://www.freesound.org/people/UncleSigmund/sounds/117118/) by UncleSigmund [CC0]"
+ },
+ "thunderstorm": {
+  "file": "5-156999-A-19.wav",
+  "attribution": "clip derived from Lightening.wav (http://www.freesound.org/people/chrscrwfrd18/sounds/156999/) by chrscrwfrd18 [CC0]"
+ }
+}

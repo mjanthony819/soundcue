@@ -1,0 +1,42 @@
+[
+ {
+  "class": "car_horn",
+  "file": "clip-car_horn.ogg"
+ },
+ {
+  "class": "clock_alarm",
+  "file": "clip-clock_alarm.ogg"
+ },
+ {
+  "class": "crying_baby",
+  "file": "clip-crying_baby.ogg"
+ },
+ {
+  "class": "dog",
+  "file": "clip-dog.ogg"
+ },
+ {
+  "class": "door_wood_knock",
+  "file": "clip-door_wood_knock.ogg"
+ },
+ {
+  "class": "footsteps",
+  "file": "clip-footsteps.ogg"
+ },
+ {
+  "class": "glass_breaking",
+  "file": "clip-glass_breaking.ogg"
+ },
+ {
+  "class": "pouring_water",
+  "file": "clip-pouring_water.ogg"
+ },
+ {
+  "class": "siren",
+  "file": "clip-siren.ogg"
+ },
+ {
+  "class": "thunderstorm",
+  "file": "clip-thunderstorm.ogg"
+ }
+]
