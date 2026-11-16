@@ -1,5 +1,5 @@
 {
- "note": "Re-measured 2026-11-16 from the surviving deployed weights (model.json) with floored log-mel features (max(acc,1e-6)); original training logs/checkpoint did not survive a workspace reset. Split: official ESC-50 folds 1-3 train / 4 val / 5 test, 10 classes, 8 clips per class on val/test.",
+ "note": "Re-measured 2026-11-16 from the shipped deployed weights (model.json) with floored log-mel features (max(acc,1e-6)); the original training run's logs/checkpoint were not retained. Split: official ESC-50 folds 1-3 train / 4 val / 5 test, 10 classes, 8 clips per class on val/test.",
  "classes": [
   "crying_baby",
   "clock_alarm",
