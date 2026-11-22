@@ -6,7 +6,7 @@
 
 const DSP = (() => {
   const SR = 16000, WIN = 64000, NFFT = 1024, HOP = 256, NMEL = 64;
-  const FRAMES = 1 + Math.floor((WIN - NFFT) / HOP); // 250
+  const FRAMES = 1 + Math.floor((WIN - NFFT) / HOP); // 247
 
   const HANN = new Float32Array(NFFT);
   for (let i = 0; i < NFFT; i++) HANN[i] = 0.5 - 0.5 * Math.cos(2 * Math.PI * i / (NFFT - 1));
