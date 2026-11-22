@@ -18,7 +18,7 @@ ROOT = "/downloads/soundcue"
 ESC = "/tmp/ESC-50-master"
 
 SR, WIN, NFFT, HOP, NMEL = 16000, 64000, 1024, 256, 64
-FRAMES = 1 + (WIN - NFFT) // HOP  # 250
+FRAMES = 1 + (WIN - NFFT) // HOP  # 247
 
 m = json.load(open(f"{ROOT}/model.json"))
 CLASSES = m["meta"]["classes"]
