@@ -74,6 +74,7 @@ function flashScreen() {
 
 // ---------- mic ----------
 let audioCtx = null, ring = null, ringFill = 0, listening = false, micStream = null;
+let micSrc = null, micProc = null;
 let lastTick = 0, busy = false;
 const RING_SEC = 8;
 
@@ -83,6 +84,7 @@ async function startMic() {
   if (audioCtx.state === 'suspended') await audioCtx.resume();
   const src = audioCtx.createMediaStreamSource(micStream);
   const proc = audioCtx.createScriptProcessor(4096, 1, 1);
+  micSrc = src; micProc = proc;
   const cap = RING_SEC * audioCtx.sampleRate;
   ring = new Float32Array(cap); ringFill = 0;
   src.connect(proc); proc.connect(audioCtx.destination);
@@ -101,6 +103,8 @@ async function startMic() {
 }
 function stopMic() {
   listening = false;
+  if (micProc) { micProc.onaudioprocess = null; micProc.disconnect(); micProc = null; }
+  if (micSrc) { micSrc.disconnect(); micSrc = null; }
   if (micStream) micStream.getTracks().forEach(t => t.stop());
   $('btnMic').textContent = 'Start listening';
   $('micStatus').textContent = 'Stopped.';
